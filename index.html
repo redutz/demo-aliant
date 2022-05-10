@@ -1,57 +1,85 @@
-<!doctype html>
-<!--
-/*
- * Copyright 2017 Google Inc. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
--->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building an augmented reality application with the WebXR Device API</title>
+<head>
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-
-    <!-- three.js -->
-    <script src="https://unpkg.com/three@0.126.0/build/three.js"></script>
-    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="../shared/app.css" />
-    <script src="../shared/utils.js"></script>
-  </head>
-  <body>
-    <div id="enter-ar-info" class="mdc-card demo-card">
-      <h2>Dedeman Demo - Realitate Augmentata</h2>
-        <p>Acesta este un demo prin care se poate vizualiza, în AR, mobilă și alte obiecte 3D.</p>
-        <a id="enter-ar" class="mdc-button mdc-button--raised mdc-button--accent">
-            Vezi produsul
-        </a>
-        <p></p>
-<img src="tengen.png">
-        <p style="text-align:right">powered by Aliant</p>
-
-      <!-- Starting an immersive WebXR session requires user interaction. Start the WebXR experience with a simple button. -->
-
-    </div>
-
-    <div id="unsupported-info" class="mdc-card demo-card">
-      <h2>Dispozitivul dumneavoastră nu este compatibil</h2>
-      <p>
-        Dispozitivul nu suportă functionalitățile AR dezvoltate. Încercați un alt dispozitiv, cu sistemul de operare Android.
-      </p>
-    </div>
-    <script src="app.js"></script>
-    <div id="stabilization"></div>
-  </body>
+</head>
+<body>
+<table class="mdc-data-table">
+    <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <tr>
+        <td>
+            <h1>Furniture models for Dedeman</h1>
+        </td>
+        <tr>
+        <td>
+            <h2>Comoda</h2>
+            <model-viewer
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    src="./Comoda gltf.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    auto-rotate
+                    alt="A 3D model Carousel"
+            ></model-viewer>
+        </td>
+        <td><h2>Dulap</h2>
+            <model-viewer
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    src="./Dulap gltf.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    alt="A 3D model Carousel"
+            ></model-viewer>
+        </td>
+        <td>
+            <h2>Masuta Cafea</h2>
+            <model-viewer
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    src="./Masute cafea gltf.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    alt="A 3D model Carousel"
+            ></model-viewer>
+        </td>
+    </tr>
+    <tr>
+        <td><h2>Masuta living Sardinia</h2>
+            <model-viewer
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    src="./Masute living Sardinia gltf.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    alt="A 3D model Carousel"
+            ></model-viewer>
+        </td>
+        <td><h2>Scaun</h2>
+            <model-viewer
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    src="./Scaun gltf.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    alt="A 3D model Carousel"
+            ></model-viewer>
+        </td>
+        <td><h2>Vaza</h2>
+            <model-viewer
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    src="./Vaza gltf.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    alt="A 3D model Carousel"
+            ></model-viewer>
+        </td>
+        </tr>
+    </tr>
+</table>
+</body>
 </html>
