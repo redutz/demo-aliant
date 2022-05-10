@@ -15,6 +15,7 @@
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Comoda living - Sardinia - Dedeman</title>
@@ -25,7 +26,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background:#215196">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="./img/logo-30.svg"></a>
+        <a class="navbar-brand" href="#"><a href="index.html"><img src="./img/logo-30.svg"></a></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -76,52 +77,14 @@
             <hr>
             <br>
             <div class="row">
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="./img/8063886.jpg">
-                        <div class="item-box-head">Masuta living Sardinia, dreptunghiulara, stejar
-                            artisan + negru,
-                        </div>
-                        <button class="btn item-box-btn" onclick="location.href='masutasardinia.html';">Vezi modelul 3D</button>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="./img/8066854-2.jpg">
-                        <div class="item-box-head">Dulap dormitor Mondego 220, alb mat + folie
-                            lucioasa alba, 2 usi glisante
-                        </div>
-                        <button class="btn item-box-btn" onclick="location.href='dulapmodengo.html';">Vezi modelul 3D</button>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="./img/8067095_kauwhata_st28464m_wooden_1_.jpg">
-                        <div class="item-box-head">Masuta living Kauwhata ST28464M, triunghiulara,
-                            maro + negru
-                        </div>
-                        <button class="btn item-box-btn" onclick="location.href='masutakauwhata.html';">Vezi modelul 3D</button>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="./img/8065373_8_aranguiz.jpg">
-                        <div class="item-box-head">Scaun bucatarie / living fix Aranguiz, tapitat
-                            artisan + negru,
-                        </div>
-                        <button class="btn item-box-btn" onclick="location.href='scaun.html';">Vezi modelul 3D</button>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <img src="./img/8067134_1.jpg">
-                        <div class="item-box-head">Vaza decorativa, AK3321036, ceramica, alb + auriu
-                        </div>
-                        <button class="btn item-box-btn" onclick="location.href='vaza.html';">Vezi modelul 3D</button>
-                    </div>
-                </div>
+                <model-viewer ar ar-modes="webxr scene-viewer quick-look" src="./modele/Dulap gltf.glb" shadow-intensity="1" camera-controls alt="Scaun 3D Dedeman">
+                <button slot="ar-button" id="ar-button">
+                    Vezi mobila în propria casă
+                </button>
+                </model-viewer>
             </div>
-
+        </div>
+    </section>
 <footer class="footer">
     <div class="container">
         Live Demo developed by
