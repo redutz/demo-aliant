@@ -29,10 +29,18 @@
     <section id="shop">
         <div class="container" style="margin-top:90px;">
             <div class="row">
-                <model-viewer ar ar-modes="webxr scene-viewer quick-look" src="./modele/Masute living Sardinia gltf.glb" shadow-intensity="1" camera-controls alt="Scaun 3D Dedeman">
-                <button slot="ar-button" id="ar-button">
-                    Vezi mobila în propria casă
-                </button>
+                <model-viewer bounds="tight" enable-pan src="uploads_files_2731453_bathroomCabinet.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1.22" environment-image="neutral">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        Vezi mobila în propria casă
+                    </button>
+                    <div id="ar-prompt">
+                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                    </div>
+                </model-viewer>
+
                 </model-viewer>
             </div>
         </div>
